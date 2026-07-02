@@ -1,0 +1,9 @@
+# SoulsFan Games has no Python package dependencies.
+# This project is a React + TypeScript web app with a Node.js backend.
+#
+# Required tools:
+# Node.js >= 18
+# npm
+#
+# Install JavaScript dependencies with:
+# npm run install:all

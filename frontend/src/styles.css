@@ -1,0 +1,232 @@
+:root {
+  --ink: #090a0f;
+  --ink-soft: #101017;
+  --paper: #eee6d5;
+  --paper-dim: #bcb4a7;
+  --ember: #f2a65a;
+  --ember-hot: #ffd37b;
+  --blood: #9f3f4b;
+  --stamina: #77a68c;
+  --muted: #77727b;
+  --edge: #59545d;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.app-shell {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen {
+  flex: 1;
+  padding: 2rem;
+}
+
+.screen--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  text-align: center;
+  background:
+    radial-gradient(120% 80% at 75% 20%, #243044 0%, #14182a 55%, #0a0c14 100%);
+}
+
+.title {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-shadow: 3px 3px 0 #050509;
+}
+
+.subtitle {
+  color: var(--ember);
+  letter-spacing: 0.35em;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* --- buttons --- */
+.btn {
+  font-family: inherit;
+  background: transparent;
+  color: var(--paper);
+  border: 1px solid var(--edge);
+  border-radius: 2px;
+  padding: 0.7rem 1.2rem;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  font-weight: bold;
+  transition: all 0.15s ease;
+  min-width: 240px;
+}
+.btn:hover:not(:disabled) {
+  color: var(--ember-hot);
+  border-color: var(--ember);
+  box-shadow: 0 0 14px rgba(242, 166, 90, 0.25);
+}
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.btn--primary {
+  border-color: var(--ember);
+  color: var(--ember-hot);
+}
+.btn--ghost {
+  border-color: transparent;
+  color: var(--muted);
+  min-width: auto;
+}
+
+/* --- main menu --- */
+.menu {
+  gap: 1.2rem;
+}
+.menu-buttons,
+.namecard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+}
+.namecard label {
+  color: var(--paper-dim);
+  font-size: 0.85rem;
+}
+.namecard input {
+  font-family: inherit;
+  background: var(--ink-soft);
+  border: 1px solid var(--edge);
+  color: var(--paper);
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 2px;
+  width: 260px;
+}
+.namecard input:focus {
+  outline: none;
+  border-color: var(--ember);
+}
+.welcome {
+  color: var(--paper-dim);
+  margin: 0 0 0.4rem;
+}
+.welcome strong {
+  color: var(--ember);
+}
+.hint {
+  font-size: 0.8rem;
+  color: var(--paper-dim);
+  font-style: italic;
+}
+.hint--warn {
+  color: var(--blood);
+}
+.menu-footer {
+  position: absolute;
+  bottom: 1.4rem;
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+/* --- content pages --- */
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  width: 100%;
+}
+.page h2 {
+  color: var(--ember);
+  letter-spacing: 0.12em;
+}
+.page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.page th,
+.page td {
+  border: 1px solid var(--edge);
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+.page th {
+  color: var(--ember-hot);
+  background: var(--ink-soft);
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--ink-soft);
+}
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--ember);
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+}
+
+/* --- game --- */
+.game-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem;
+}
+.game-canvas {
+  background: var(--ink);
+  border: 1px solid var(--ink-soft);
+  max-width: 100%;
+  image-rendering: auto;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 8, 13, 0.72);
+  z-index: 10;
+}
+.panel {
+  background: var(--ink-soft);
+  border: 1px solid var(--ember);
+  border-radius: 4px;
+  padding: 1.6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+  min-width: 320px;
+}
+.panel h2 {
+  margin: 0.2rem 0 0.6rem;
+}
