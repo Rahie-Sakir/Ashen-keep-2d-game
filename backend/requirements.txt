@@ -1,0 +1,5 @@
+# No Python package dependencies.
+#
+# SoulsFan Games uses a Node.js Express backend.
+# Install backend dependencies with:
+# npm --prefix backend install
