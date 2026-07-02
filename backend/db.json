@@ -1,0 +1,129 @@
+{
+  "players": [
+    {
+      "id": "3Y3JZoiBrI2h",
+      "name": "Rahie",
+      "createdAt": "2026-06-14T17:05:37.030Z"
+    },
+    {
+      "id": "SI47i2mfXy2e",
+      "name": "Naveed",
+      "createdAt": "2026-07-02T14:42:15.564Z"
+    },
+    {
+      "id": "qQr3U8A7nhPI",
+      "name": "bulbulu",
+      "createdAt": "2026-07-02T14:55:13.305Z"
+    }
+  ],
+  "saves": [
+    {
+      "playerId": "SI47i2mfXy2e",
+      "state": {
+        "version": 1,
+        "levelIndex": 2,
+        "checkpoint": [
+          2,
+          150,
+          720
+        ],
+        "defeatedBosses": [
+          "root_warden",
+          "bell_keeper",
+          "pale_regent"
+        ],
+        "gameTime": 141.5817999999842,
+        "victory": true,
+        "player": {
+          "health": 145,
+          "maxHealth": 145,
+          "stamina": 145,
+          "maxStamina": 145,
+          "attackPower": 1.7800000000000007,
+          "characterLevel": 8,
+          "echoes": 1112,
+          "weapon": "ash_blade",
+          "unlockedWeapons": [
+            "ash_blade",
+            "twin_fangs",
+            "ember_maul",
+            "warden_spear"
+          ]
+        }
+      },
+      "updatedAt": "2026-07-02T14:45:05.894Z"
+    },
+    {
+      "playerId": "qQr3U8A7nhPI",
+      "state": {
+        "version": 1,
+        "levelIndex": 0,
+        "checkpoint": [
+          0,
+          150,
+          720
+        ],
+        "defeatedBosses": [],
+        "gameTime": 45.256899999995305,
+        "victory": false,
+        "player": {
+          "health": 0,
+          "maxHealth": 100,
+          "stamina": 89.73399999999992,
+          "maxStamina": 100,
+          "attackPower": 1,
+          "characterLevel": 1,
+          "echoes": 155,
+          "weapon": "ash_blade",
+          "unlockedWeapons": [
+            "ash_blade",
+            "twin_fangs"
+          ]
+        }
+      },
+      "updatedAt": "2026-07-02T15:21:16.397Z"
+    },
+    {
+      "playerId": "3Y3JZoiBrI2h",
+      "state": {
+        "version": 1,
+        "levelIndex": 0,
+        "checkpoint": [
+          0,
+          150,
+          700
+        ],
+        "defeatedBosses": [],
+        "gameTime": 3.3448000000000024,
+        "victory": false,
+        "player": {
+          "health": 100,
+          "maxHealth": 100,
+          "stamina": 100,
+          "maxStamina": 100,
+          "attackPower": 1,
+          "characterLevel": 1,
+          "echoes": 25,
+          "weapon": "ash_blade",
+          "unlockedWeapons": [
+            "ash_blade",
+            "twin_fangs"
+          ]
+        }
+      },
+      "updatedAt": "2026-07-02T15:02:24.846Z"
+    }
+  ],
+  "scores": [
+    {
+      "id": "BI4bjMa6sylZ",
+      "playerId": "SI47i2mfXy2e",
+      "name": "Naveed",
+      "echoes": 1112,
+      "levelReached": 3,
+      "timeSeconds": 142,
+      "victory": true,
+      "createdAt": "2026-07-02T14:45:05.893Z"
+    }
+  ]
+}
