@@ -22,6 +22,15 @@ export function createApp(db) {
     res.json({ status: "ok", service: "soulsfan-games", time: Date.now() });
   });
 
+  // Backend version endpoint
+  app.get("/api/version", (_req, res) => {
+  res.json({
+    name: "Ashen Keep",
+    version: "1.1",
+    status: "running"
+      });
+  });
+
   app.use("/api/players", playersRouter(db));
   app.use("/api/saves", savesRouter(db));
   app.use("/api/leaderboard", leaderboardRouter(db));

@@ -57,6 +57,7 @@ export function savesRouter(db) {
     const save = db.upsertSave({
       playerId,
       state,
+      version: "1.1",
       updatedAt: new Date().toISOString(),
     });
     return res.json(save);
