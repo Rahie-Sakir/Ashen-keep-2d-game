@@ -3,9 +3,9 @@
   --ink-soft: #101017;
   --paper: #eee6d5;
   --paper-dim: #bcb4a7;
-  --ember: #f2a65a;
+  --ember: #eb9c4e;
   --ember-hot: #ffd37b;
-  --blood: #9f3f4b;
+  --blood: #b33d4b;
   --stamina: #77a68c;
   --muted: #77727b;
   --edge: #59545d;
@@ -64,6 +64,17 @@ body,
 button {
   font-family: inherit;
   cursor: pointer;
+  background-color: #e63946; /* New button color */
+  color: #fff;               /* Text color */
+  border: 2px solid #9d0208; /* Border */
+  padding: 0.5rem 1rem;      /* Spacing */
+  border-radius: 6px;        /* Rounded corners */
+  transition: 0.2s ease;     /* Smooth hover */
+}
+
+button:hover {
+  filter: brightness(1.15);  /* Slight hover effect */
+  transform: scale(1.05);    /* Small scale effect */
 }
 
 /* --- buttons --- */
