@@ -1,5 +1,5 @@
 /**
- * Thin typed wrapper over the Express REST API. All calls are relative to
+ * Thin typed wrapper over the FastAPI REST API. All calls are relative to
  * /api so the Vite dev proxy (or a same-origin deploy) routes them to the
  * backend.
  */
